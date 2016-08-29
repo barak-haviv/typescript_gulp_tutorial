@@ -23,11 +23,11 @@ gulp.task("default", ["copy-html"], function () {
         packageCache: {}
     })
     .plugin(tsify)
+    .transform("babelify")
     .bundle()
     .pipe(source('bundle.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(uglify())
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest("dist"));
 });
