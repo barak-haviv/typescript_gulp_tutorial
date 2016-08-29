@@ -1,0 +1,15 @@
+{
+  "name": "typescript_gulp_tutorial",
+  "version": "1.0.0",
+  "description": "typescript tutorial from https://www.typescriptlang.org/docs/handbook/gulp.html",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Barak Noam Haviv",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.13.6"
+  }
+}
